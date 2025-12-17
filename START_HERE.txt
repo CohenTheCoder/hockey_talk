@@ -1,0 +1,124 @@
+🏒 HOCKEY SLANG TRANSLATOR - START HERE! 🏒
+
+=====================================================
+QUICK START (FREE VERSION - RECOMMENDED!)
+=====================================================
+
+1. Open "hockey-translator-FREE.html" in your browser
+2. Start translating!
+3. That's it! No setup needed.
+
+✅ This version is 100% FREE
+✅ No API keys needed
+✅ Works offline
+✅ Can be deployed anywhere for free
+
+
+=====================================================
+WHAT'S IN THIS PACKAGE?
+=====================================================
+
+📁 FREE VERSION (Use this one!):
+   └── hockey-translator-FREE.html - Open this and you're done!
+
+📁 ADVANCED VERSION (Requires API key + backend):
+   ├── server.js - Backend server
+   ├── package.json - Dependencies
+   ├── index.html - Frontend (goes in public/ folder)
+   ├── .env.example - API key template
+   └── DEPLOYMENT_GUIDE.md - Full instructions
+
+📁 DOCUMENTATION:
+   ├── README.md - Project overview
+   └── DEPLOYMENT_GUIDE.md - How to deploy publicly
+
+
+=====================================================
+HOW TO USE THE FREE VERSION
+=====================================================
+
+OPTION A: Use locally
+1. Double-click "hockey-translator-FREE.html"
+2. Start translating!
+
+OPTION B: Deploy publicly (also free!)
+1. Go to netlify.com
+2. Drag and drop "hockey-translator-FREE.html"
+3. Get a free URL like: your-app.netlify.app
+4. Share with everyone!
+
+
+=====================================================
+WHY TWO VERSIONS?
+=====================================================
+
+FREE VERSION:
+- Uses built-in dictionary (50+ terms)
+- No AI, just smart find-and-replace
+- 100% free forever
+- No setup required
+- Perfect for most uses!
+
+AI VERSION (Advanced):
+- Uses Claude AI for natural translations
+- Costs ~$0.002 per translation
+- Requires Anthropic API key
+- Needs backend server setup
+- More natural/creative translations
+
+
+=====================================================
+RECOMMENDATION
+=====================================================
+
+👉 START WITH THE FREE VERSION! 👈
+
+It has all the hockey slang from the sources you provided:
+- biscuit, celly, snipe, dangle, chirp
+- beauty, grinder, goon, pigeon, pylon
+- flow, lettuce, twig, bucket
+- bird, rocket
+- ferda, wheel, bar down
+- And 40+ more terms!
+
+Only use the AI version if you:
+- Want super natural translations
+- Don't mind paying per use
+- Are comfortable setting up servers
+
+
+=====================================================
+NEED HELP?
+=====================================================
+
+FREE VERSION issues:
+- Just open the HTML file - it should work!
+- Works in Chrome, Firefox, Safari, Edge
+
+AI VERSION issues:
+- Read DEPLOYMENT_GUIDE.md
+- Make sure Node.js is installed
+- Check that .env file has your API key
+
+
+=====================================================
+QUICK EXAMPLES
+=====================================================
+
+English → Hockey Slang:
+"He scored a goal" → "He scored a gino"
+"Nice pass" → "Nice sauce"
+"The goalie" → "The tendy"
+
+Hockey Slang → English:
+"Wheel, snipe, celly" → "Skate fast, great shot, celebration"
+"Nice flow, bud" → "Nice hair, buddy"
+"Light the lamp" → "Score a goal"
+
+
+=====================================================
+
+Ferda! 🏒
+
+Questions? Check the README.md file!
+
