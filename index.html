@@ -175,26 +175,6 @@
         result = result.replace(regex, dict[key]);
       }
       
-      // Add Canadian "eh" but ONLY when it makes sense
-      if (toSlang && result.trim()) {
-        result = result.trim();
-        const lastChar = result.slice(-1);
-        const hasPunctuation = ['.', '!', '?'].includes(lastChar);
-        
-        // Only add "eh" to statements and questions, not short responses
-        const wordCount = result.split(/\s+/).length;
-        const isShortResponse = wordCount <= 2 && (result.match(/^(yup|nah|sup|later|beauty|thanks)/) !== null);
-        
-        // Don't add "eh" to very short phrases or single words
-        if (!isShortResponse && wordCount >= 3) {
-          if (hasPunctuation) {
-            result = result.slice(0, -1).trim() + ', eh' + lastChar;
-          } else {
-            result = result + ', eh';
-          }
-        }
-      }
-      
       return result.trim();
     }
 
