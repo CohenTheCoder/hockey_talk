@@ -13,7 +13,7 @@
         🏒 Hockey Slang Translator
       </h1>
       <p class="text-blue-200 text-lg">
-        100% Free • Works Offline • No API Needed!
+        Let's Go, Bud!
       </p>
     </div>
 
@@ -70,52 +70,98 @@
       'gino': 'goal', 'apple': 'assist', 'bar down': 'shot under crossbar',
       'beauty': 'cool player', 'grinder': 'hard worker', 'goon': 'fighter',
       'tendy': 'goalie', 'sieve': 'bad goalie', 'bender': 'bad skater',
-      'barn': 'arena', 'sin-bin': 'penalty box', 'pipe': 'goal post',
+      'barn': 'arena', 'house': 'arena', 'sin-bin': 'penalty box', 'pipe': 'goal post',
       'flow': 'long hair', 'lettuce': 'hair', 'mitts': 'gloves',
       'twig': 'hockey stick', 'bucket': 'helmet',
       'bird': 'girl', 'rocket': 'hot girl', 'hot babe': 'hot girl',
       'ferda': 'for the boys', 'praccy': 'practice',
-      'bud': 'friend', 'buddy': 'friend', 'guy': 'person', 'gyu': 'person'
+      'bud': 'friend', 'buddy': 'friend', 'guy': 'person',
+      'clapper': 'slap shot', 'slapper': 'slap shot',
+      'dust': 'bad', 'dusty': 'bad', 'dusted': 'beaten badly',
+      'sick': 'awesome', 'unreal': 'amazing', 'brutal': 'terrible',
+      'chirpy': 'talkative', 'chippy': 'aggressive',
+      'weak': 'pathetic', 'soft': 'weak',
+      'beaut': 'beauty', 'beauts': 'beauties'
     };
 
-    // English to slang mappings
+    // English to slang mappings with edge and banter
     const englishToSlang = {
       'puck': 'biscuit', 'celebration': 'celly', 'great shot': 'snipe',
       'skillful move': 'dangle', 'trash talk': 'chirp', 'skate fast': 'wheel',
       'pass': 'sauce', 'goal': 'gino', 'assist': 'apple',
       'cool player': 'beauty', 'hard worker': 'grinder', 'fighter': 'goon',
       'goalie': 'tendy', 'bad goalie': 'sieve', 'bad skater': 'bender',
-      'arena': 'barn', 'penalty box': 'sin-bin', 'goal post': 'pipe',
+      'arena': 'barn', 'house': 'barn', 'penalty box': 'sin-bin', 'goal post': 'pipe',
       'long hair': 'flow', 'hair': 'lettuce', 'gloves': 'mitts',
-      'hockey stick': 'twig', 'helmet': 'bucket',
-      'girl': 'bird', 'hot girl': 'rocket',
+      'hockey stick': 'twig', 'stick': 'twig', 'helmet': 'bucket',
+      'girl': 'bird', 'hot girl': 'rocket', 'attractive girl': 'rocket',
       'for the boys': 'ferda', 'practice': 'praccy',
-      'friend': 'bud', 'person': 'guy',
-      // Rough translations
-      'hello': 'sup', 'hi': 'sup', 'hey': 'sup',
-      'good morning': 'sup', 'good sir': 'bud', 'sir': 'bud',
-      'how are you': 'how ya doin', 'thank you': 'thanks bud',
-      'yes': 'yup', 'no': 'nah', 'goodbye': 'later',
-      'excellent': 'beauty', 'amazing': 'unreal', 'terrible': 'brutal',
-      'absolutely': 'hell yeah', 'i agree': 'hell yeah'
+      'friend': 'bud', 'friends': 'boys', 'person': 'guy', 'people': 'guys',
+      'slap shot': 'clapper', 'slapshot': 'clapper',
+      
+      // Bad/terrible translations with EDGE
+      'bad': 'dust', 'terrible': 'brutal', 'awful': 'brutal', 'horrible': 'dust',
+      'poor': 'weak', 'pathetic': 'weak', 'useless': 'dust',
+      'bad at hockey': 'dust', 'not good': 'dust',
+      
+      // Weather and situations
+      'nice day': 'beauty day', 'good day': 'beauty day', 
+      'nice weather': 'beauty weather', 'good weather': 'sick weather',
+      'fine day': 'beauty day',
+      
+      // Greetings with BANTER
+      'hello': 'sup', 'hi': 'sup', 'hey': 'sup', 'hi there': 'sup',
+      'good morning': 'mornin', 'good afternoon': 'sup', 'good evening': 'sup',
+      'how are you': 'how ya doin', 'how are you doing': 'how ya doin',
+      'whats up': 'whats good', 'what is up': 'whats good',
+      
+      // Formal to rough
+      'good sir': 'bud', 'sir': 'bud', 'mister': 'bud', 'gentleman': 'bud',
+      'thank you': 'thanks bud', 'thanks': 'thanks bud',
+      'you are welcome': 'no worries', 'youre welcome': 'no worries',
+      
+      // Responses with EDGE
+      'yes': 'yup', 'yeah': 'yup', 'no': 'nah', 'nope': 'nah',
+      'absolutely': 'hell yeah', 'definitely': 'for sure',
+      'i agree': 'hell yeah', 'agreed': 'yup for sure',
+      'excellent': 'beauty', 'great': 'beauty', 'awesome': 'sick',
+      'amazing': 'unreal', 'incredible': 'unreal', 'fantastic': 'unreal',
+      'wonderful': 'beauty', 'perfect': 'beauty',
+      
+      // Teacher/School with EDGE
+      'teacher': 'teach', 'teachers': 'teaches',
+      'school': 'school', 'class': 'class',
+      
+      // Goodbyes
+      'goodbye': 'later', 'bye': 'later', 'see you': 'later bud',
+      'see you later': 'catch ya later',
+      
+      // More personality
+      'really': 'for real', 'seriously': 'for real',
+      'wow': 'jeez', 'oh my': 'jeez',
+      'shut up': 'pipe down', 'be quiet': 'zip it',
+      'go away': 'beat it', 'leave': 'bounce',
+      'idiot': 'dummy', 'stupid': 'dumb',
+      'loser': 'loser', 'winner': 'beauty',
+      'tough': 'tough', 'weak': 'soft', 'strong': 'tough'
     };
 
     let mode = 'toSlang';
 
     const examplesEnglish = [
-      "Hello good sir, how are you?",
-      "He scored an amazing goal",
-      "That was excellent work friend",
-      "The goalie made a great save",
-      "I saw a hot girl at the game"
+      "Hello good sir, how are you? What a fine day!",
+      "That teacher is terrible at their job",
+      "He scored an amazing goal with a slap shot",
+      "The arena was packed tonight",
+      "That person is really bad at hockey"
     ];
 
     const examplesSlang = [
       "Sup bud, wheel snipe celly!",
-      "Beauty bar down gino",
-      "That tendy is a sieve",
-      "Nice flow and silky mitts bud",
-      "Ferda boys, crush sandos after praccy"
+      "Beauty bar down gino with that clapper",
+      "That tendy is straight dust",
+      "The barn was packed, unreal atmosphere",
+      "Nice flow and silky mitts on that beauty"
     ];
 
     function translate(text, toSlang) {
@@ -129,15 +175,23 @@
         result = result.replace(regex, dict[key]);
       }
       
+      // Add Canadian "eh" but ONLY when it makes sense
       if (toSlang && result.trim()) {
         result = result.trim();
         const lastChar = result.slice(-1);
         const hasPunctuation = ['.', '!', '?'].includes(lastChar);
         
-        if (hasPunctuation) {
-          result = result.slice(0, -1).trim() + ', eh' + lastChar;
-        } else {
-          result = result + ', eh';
+        // Only add "eh" to statements and questions, not short responses
+        const wordCount = result.split(/\s+/).length;
+        const isShortResponse = wordCount <= 2 && (result.match(/^(yup|nah|sup|later|beauty|thanks)/) !== null);
+        
+        // Don't add "eh" to very short phrases or single words
+        if (!isShortResponse && wordCount >= 3) {
+          if (hasPunctuation) {
+            result = result.slice(0, -1).trim() + ', eh' + lastChar;
+          } else {
+            result = result + ', eh';
+          }
         }
       }
       
